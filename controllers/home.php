@@ -7,6 +7,7 @@ class Home extends Controller
 
     function anonymous()
     {
+        clearError();
         $this->view("home", []);
     }
 

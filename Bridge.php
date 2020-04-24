@@ -1,5 +1,8 @@
 <?php
 // Process URL from browser
+require_once "./core/functions/auth.php";
+
+// Process URL from browser
 require_once "./core/App.php";
 
 // How controllers call Views & Models

@@ -187,6 +187,23 @@ body {
   position: absolute;
   z-index: -1;
 }
+.image_form{
+  width: 600px;
+  height: 400px;
+  margin-left: 50px;
+}
+.image_form_map{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.image_form_BHYT{
+  width: 600px;
+  height: 400px;
+  float: right;
+  margin-right: 50px;
+}
 .id_picture{
   margin-left: 50px;
 }
@@ -270,9 +287,14 @@ body {
   -ms-align-items: center;
 }
 
+.form-group-flex-registration2 {
+  width: 100%;
+  margin-top: 10px;
+}
 .form-group-flex-registration {
   width: 100%;
   margin-top: 10px;
+
 }
 
 .form-group {
@@ -352,6 +374,10 @@ h3 {
   padding: 50px 0;
 }
 
+.form{
+  background-color: #fff;
+}
+
 input,
 label,
 select {
@@ -373,6 +399,16 @@ select {
   float: left;
   margin-right: 10px;
 }
+.formTitle{
+  color: #000;
+  margin-top: -10px;
+  float: left;
+  font-size: large;
+  margin: 10px 0px;
+  width: 25%;
+  text-align: center;
+}
+
 
 .inputInfoS{
   margin-top: 10px;

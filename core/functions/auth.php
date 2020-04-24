@@ -1,15 +1,16 @@
 <?php
+session_start();
 
 function isAuth()
 {
     return (isset($_SESSION['login_id'])) ? true : false;
 }
 
-function saveUserSession($id, $email, $isDoctor)
+function saveUserSession($id, $email, $name)
 {
     $_SESSION['login_id'] = $id;
     $_SESSION['login_email'] = $email;
-    $_SESSION['login_is_doctor'] = $isDoctor;
+    $_SESSION['name'] = $name;
 }
 
 function saveUserPermissionSession($permissions)

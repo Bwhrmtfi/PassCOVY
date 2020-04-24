@@ -9,10 +9,3 @@ function upfile($file, $fileName) {
     move_uploaded_file($file['tmp_name'], $uploadPath);
 }
 
-function setError($error) {
-    $_SESSION['error'] = $error;
-}
-
-function getError() {
-    return (isset($_SESSION['error'])) ? $_SESSION['error'] : '';
-}

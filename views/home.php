@@ -2,6 +2,7 @@
 <html lang="">
 <?php
 include('static_header.php');
+
 ?>
 <script>
     var loadingImg = "<img class='loading-img' src = 'assets/images/loading.gif' ?>";

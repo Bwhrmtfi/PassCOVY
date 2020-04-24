@@ -2,7 +2,7 @@
 <html lang="">
 <?php 
 include(__DIR__.'/../static_header.php'); 
-require_once __DIR__."/../../core/functions/helper.php";
+require_once __DIR__."/../../core/functions/auth.php";
 ?>
 <script>
     var loadingImg = "<img class='loading-img' src = 'assets/images/loading.gif' ?>";
@@ -25,7 +25,7 @@ require_once __DIR__."/../../core/functions/helper.php";
                             <div class="form-group">
                                 <input type="password" name="password" id="password" placeholder="Mật khẩu" required/>
                             </div>
-                            <span class="text-danger"><?php echo getError(); ?></span>
+                            <span class="text-danger "><?php echo getError(); ?></span>
                         </div>
                     </div>
                 </div>

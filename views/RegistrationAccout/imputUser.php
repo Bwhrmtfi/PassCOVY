@@ -1,6 +1,7 @@
 <?php
 require_once "../../core/functions/helper.php";
 require_once "../../mysqli.php";
+require_once "../../core/functions/auth.php";
 const FILE_PATH_BHYT = "../../uploads/BHYT/";
 const FILE_PATH_ID = "../../uploads/id/";
 if(isset($_POST['submit'])){
@@ -25,5 +26,12 @@ if(isset($_POST['submit'])){
     $stmt = $connection->prepare($query);
     $stmt->bind_param("ssssss", $userName, $email,$password,$phone,$imgId,$imgBH); 
     $stmt->execute();
+
+    $query = 'SELECT id FROM users WHERE email = "'.$email.'" AND password = "'.$password.'"'; 
+    $result = $connection->query($query); 
+    $result = $result->fetch_assoc();
+    saveUserSession($result['id'],$email,$userName);
+
+    header('Location: /home'); 
 }
 ?>
