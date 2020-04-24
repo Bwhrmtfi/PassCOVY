@@ -117,4 +117,23 @@ $('#date').on('change', function(){
             }); 
         }
     });
+$('#faculty').on('change', function(){
+    var date = $("#date").val();
+    var faculty = $(this).val();
+    if(date){
+        $.ajax({
+            type: 'POST',
+            url: 'views/Registration/ajaxData.php',
+            data: {
+                "checkTime": true,
+                "date" : date,
+                "faculty": faculty,
+            },
+            success:function(res){
+                $('#time').html(res);
+                console.log(res);
+            }
+        }); 
+    }
+});
 </script>

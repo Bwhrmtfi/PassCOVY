@@ -11,7 +11,10 @@
             <a class="nar-text nav-link" id="registration" href="registration">Đăng ký khám bệnh</a>
         </li>
         <li class="nav-item">
-            <a class="nar-text nav-link" id="login" href="registrationAccout">Đăng nhập</a>
+            <a class="nar-text nav-link" id="login" href="login">Đăng nhập</a>
+        </li>
+        <li class="nav-item">
+            <a class="nar-text nav-link" id="registrationAccout" href="registrationAccout">Đăng Ký</a>
         </li>
     </ul>
 </nav>

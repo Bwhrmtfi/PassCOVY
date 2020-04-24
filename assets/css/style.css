@@ -137,6 +137,13 @@ body {
   margin-top: -20px;
   margin-left: 200px;
 }
+#password-not {
+  display:none;
+  position: relative;
+  margin-top: -20px;
+  margin-left: 200px;
+}
+
 
 
 #message p {
@@ -557,4 +564,7 @@ select:-moz-placeholder {
   background: #dcfffd;
   padding: 4px;
   border-radius: 5px;
+}
+.logreg-forms{
+  margin-top: 50px;
 }

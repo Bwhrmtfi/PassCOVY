@@ -7,6 +7,6 @@ class Login extends Controller
 
     function anonymous()
     {
-        $this->view("RegistrationAccout/anonymousRegistration", []);
+        $this->view("Login/login", []);
     }
 }

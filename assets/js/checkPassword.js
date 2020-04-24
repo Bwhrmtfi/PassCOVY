@@ -64,18 +64,19 @@ reInput.onfocus = function() {
 
 // When the user clicks outside of the password field, hide the message box
 reInput.onblur = function() {
-  document.getElementById("password-re").style.display = "none";
+  if(myInput.value === reInput.value) {
+    document.getElementById("password-re").style.display = "none";
+  }
 }
 
 reInput.onkeyup = function() {
   if(myInput.value === reInput.value) {
     passwordNC.classList.remove("invalid");
     passwordNC.classList.add("valid");
-    console.log(myInput.value)
-    console.log(reInput.value)
+    passwordNC.innerHTML = "Mật khẩu đã trùng";
   } else {
     passwordNC.classList.remove("valid");
     passwordNC.classList.add("invalid");
-    passwordNC.innerHTML = "Password đã trùng";
+    passwordNC.innerHTML = "Mật khẩu chưa trùng";
   }
 }

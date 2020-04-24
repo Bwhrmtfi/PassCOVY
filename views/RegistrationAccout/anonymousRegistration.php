@@ -38,7 +38,7 @@
                                 <p id="length" class="invalid">Mật khẩu phải có nhiều hơn<b> 8 ký tự</b></p>
                             </div>
                             <div id = "password-re">
-                                <p id="message-re" class="invalid"><b>Mật khẩu chưa trùng</b></p>
+                                <p id="message-re" class="invalid"></p>
                             </div>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
 </html>
 
 <script>
-document.getElementById("login").className += " active";
+document.getElementById("registrationAccout").className += " active";
 
 $('#email').on('change', function(){
         var email = $(this).val();
