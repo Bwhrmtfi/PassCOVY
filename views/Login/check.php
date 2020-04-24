@@ -10,10 +10,10 @@ if (isset($_POST['submit']) && $_POST['submit'] == 'do-login') {
      
     // Generate HTML of state options list 
     if($result->num_rows > 0){ 
+        header('Location: /home');
+    }else{ 
         setError('Tài khoản hoặc mật khẩu không đúng');
         header('Location: /login'); 
-    }else{ 
-        header('Location: /home');
     } 
 }
 ?>
