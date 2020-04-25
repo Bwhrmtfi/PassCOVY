@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light" style="background-color: #fff;">
+<nav class="navbar navbar-light" style="background-color: #fff; position: fixed; top: 0; width: 100%;   z-index: 3;">
     <a class="nar-brand navbar-brand  " href="home" style="margin-left: 150px">
         <img src="coronavirus.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Pass COVY

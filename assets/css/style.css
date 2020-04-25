@@ -1,4 +1,5 @@
 /* sign in FORM */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 #logreg-forms {
   width: 412px;
   margin: 10vh auto;
@@ -378,7 +379,7 @@ h3 {
 
 
 .main {
-  padding: 50px 0;
+  padding: 150px 0;
 }
 
 .form{
@@ -692,4 +693,128 @@ select:-moz-placeholder {
 }
 .text-form{
   font-size: 25px;
+}
+.mau-trang{
+  float: left;
+  width: 50%;
+  height: 1000px;
+}
+.mau-den{
+  float: right;
+  width: 50%;
+  height: 450px;
+  background-color: #fff;
+}
+.text-kham{
+  font-family: 'Fredoka One', cursive;
+  text-align: right;
+  font-weight: bold;
+  font-size: 150px;
+  margin-right: 20px;
+  color: #fff;
+}
+.text-at{
+  font-family: 'Fredoka One', cursive;
+  margin-top: 280px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 70px;
+  margin-left: 20px;
+  color: #004439;
+}
+.text-n{
+  font-family: 'Fredoka One', cursive;
+  margin-top: 0px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 70px;
+  margin-left: 20px;
+  color: #004439;
+}
+.img-home{
+  width: 350px;
+  float: left;
+  margin-top: -450px;
+  margin-left: 250px;
+}
+.text-l{
+  position: absolute;
+  margin-top: 100px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 80px;
+  width: 200px;
+  color: #004439;
+  border-color: #004439;
+  border-radius: 20px;
+  transform: rotate(-30deg);
+  z-index: 1;
+}
+.text-d{
+  margin-top: 20px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-left: -150px;
+  width: 300px;
+  color: #7be2d1;
+  border-color: #7be2d4;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.text-tt{
+  float: right;
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 35px;
+  margin-right: 300px;
+  color: #95ecff;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.text-k{
+  float: right;
+  margin-top: 200px;
+  font-weight: bold;
+  font-size: 60px;
+  margin-right: 300px;
+  color: #ff7676;
+  border-radius: 20px;
+  z-index: 1;
+}
+.text-p{
+  margin-top: 10px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 50px;
+  margin-left: 170px;
+  color: #fff;
+}
+.text-m{
+  margin-top: 10px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 50px;
+  margin-right: 170px;
+  color: #fff;
+}
+
+.home2{
+  width: 100%;
+  background-color: #fff;
+  height: 100px;
+  position: absolute;
+  margin-top: 400px;
+}
+.pass{
+  width: 80%;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  margin-left: 10%;
 }

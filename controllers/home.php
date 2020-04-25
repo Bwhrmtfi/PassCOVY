@@ -8,7 +8,7 @@ class Home extends Controller
     function anonymous()
     {
         clearError();
-        $this->view("home", []);
+        $this->view("Home/home", []);
     }
 
     function Show($a, $b)
