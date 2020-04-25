@@ -7,11 +7,17 @@ if (isset($_POST['submit']) && $_POST['submit'] == 'do-login') {
     // Fetch state data based on the specific country 
     $query = 'SELECT * FROM users WHERE email = "'.$email.'" AND password = "'.$password.'"'; 
     $result = $connection->query($query); 
-     
     // Generate HTML of state options list 
-    if($result->num_rows > 0){ 
-        $result = $result->fetch_assoc();
-        saveUserSession($result['id'],$email,$result['user_name']);
+    if($result->num_rows > 0){
+        $result = $result->fetch_assoc(); 
+        $query = 'SELECT * FROM registration WHERE users_id='.$result['id']; 
+        $result2 = $connection->query($query);
+        if($result2->num_rows > 0){
+            $registration="true";
+        }else{
+            $registration="false";           
+        }
+        saveUserSession($result['id'],$email,$result['user_name'],$result['phone'],$result['declaration'],$registration);
         clearError();
         header('Location: /home');
     }else{ 

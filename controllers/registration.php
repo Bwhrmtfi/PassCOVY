@@ -9,7 +9,15 @@ class Registration extends Controller
     {
         clearError();
         if (isAuth()){
-            $this->view("Registration/registration", ["name"=>$_SESSION["name"],"id"=>$_SESSION["login_id"]]);
+            if($_SESSION['declaration']=='true'){
+                if($_SESSION['registration']=='true'){
+                    header('Location: /form');
+                }else{
+                    $this->view("Registration/registration", ["name"=>$_SESSION["name"],"id"=>$_SESSION["login_id"]]);            
+                }
+            }else{
+                header('Location: /declaration'); 
+            }
         }else{
             header('Location: /registrationAccout'); 
         }

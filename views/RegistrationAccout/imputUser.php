@@ -30,7 +30,7 @@ if(isset($_POST['submit'])){
     $query = 'SELECT id FROM users WHERE email = "'.$email.'" AND password = "'.$password.'"'; 
     $result = $connection->query($query); 
     $result = $result->fetch_assoc();
-    saveUserSession($result['id'],$email,$userName);
+    saveUserSession($result['id'],$email,$userName,$phone,"false","false");
 
     header('Location: /home'); 
 }

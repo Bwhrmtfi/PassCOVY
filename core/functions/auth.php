@@ -6,11 +6,14 @@ function isAuth()
     return (isset($_SESSION['login_id'])) ? true : false;
 }
 
-function saveUserSession($id, $email, $name)
+function saveUserSession($id, $email, $name,$phone,$declaration,$registration)
 {
     $_SESSION['login_id'] = $id;
     $_SESSION['login_email'] = $email;
+    $_SESSION['phone'] = $phone;
     $_SESSION['name'] = $name;
+    $_SESSION['declaration'] = $declaration;
+    $_SESSION['registration'] = $registration;
 }
 
 function saveUserPermissionSession($permissions)

@@ -12,10 +12,16 @@
         </li>
         <?php         
         if (isAuth()) {
+            if($_SESSION["declaration"]=="false"){
+                $declaration="✖️";
+            }else{
+                $declaration="✔️";
+            }
             echo '
             <li class="nav-item dropdown">
                 <a class="nar-text nav-link dropdown-toggle" id="infor" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'.$_SESSION["name"].'</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="border-radius: 10px">
+                    <a class="dropdown-item" href="declaration">Tờ khai y tế    '.$declaration.'</a>
                     <a class="dropdown-item" href="form">Phiếu đăng ký khám bệnh</a>
                     <a class="dropdown-item" href="note">Sổ khám bệnh</a>
                     <a class="dropdown-item" href="changeinfo">Thay đổi thông tin</a>
@@ -37,3 +43,19 @@
         ?>
     </ul>
 </nav>
+
+<script>
+    $("#registration").click(function(){
+        $.ajax({
+                type: 'POST',
+                url: 'views/ajaxData.php',
+                data: 'checkRegistration=true',
+                success:function(res){
+                    console.log(res);
+                    if(res!="true"){
+                        alert(res);
+                    }
+                }
+            }); 
+    });
+</script>
