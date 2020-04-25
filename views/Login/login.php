@@ -25,7 +25,7 @@ require_once __DIR__."/../../core/functions/auth.php";
                             <div class="form-group">
                                 <input type="password" name="password" id="password" placeholder="Mật khẩu" required/>
                             </div>
-                            <span class="text-danger " style="margin-left: 50px"><?php echo getError(); ?></span>
+                            <span class="text-danger " style="margin-left: 200px"><?php echo getError(); ?></span>
                         </div>
                     </div>
                 </div>

@@ -7,6 +7,10 @@ class Login extends Controller
 
     function anonymous()
     {
-        $this->view("Login/login", []);
+        if(isAuth()){
+            header('Location: /');
+        }else{
+            $this->view("Login/login", []); 
+        }
     }
 }
