@@ -378,7 +378,7 @@ h3 {
 }
 
 .form{
-  background-color: #fff;
+  background-color: #ccfff5;
 }
 
 input,
@@ -685,4 +685,7 @@ select:-moz-placeholder {
 }
 .logreg-forms{
   margin-top: 50px;
+}
+.text-form{
+  font-size: 25px;
 }

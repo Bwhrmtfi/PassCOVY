@@ -16,40 +16,44 @@
     var loadingImg = "<img class='loading-img' src = 'assets/images/loading.gif' ?>";
 </script>
     <div class="form">
-            <h2>Phiếu đăng ký khám bệnh</h2>
+            <h2 style="font-size: 30px">Phiếu đăng ký khám bệnh</h2>
             <div class="form-group-flex-registration2">
                 <div class="formTitle">
-                    <h3 class="titleName">
+                    <h3 class="titleName text-form" style="margin-top: 50px;">
                         <?php
                         echo $result["user_name"];
                         ?>
                     </h3>
                 </div>
                 <div class="formTitle">
-                    <h3 class="titleName">
+                    <h3 class="titleName text-form" style="margin-top: 35px;">
                         <?php
-                        echo $result["time"]." ".$result["date"];
+                        echo $result["time"]."<br/>".$result["date"];
                         ?>
                     </h3>
                 </div>
                 <div class="formTitle">
-                    <h3 class="titleName">
-                        Số thứ tự: 
+                    <h3 class="titleName text-form">
+                        Số thứ tự:
+                        <h1>
                         <?php
                         echo $result["stt"];
                         ?>
+                        </h1> 
                     </h3>
                 </div>
                 <div class="formTitle">
-                    <h3 class="titleName">
+                    <h3 class="titleName text-form">
                         Mã phiếu: 
+                        <h1>
                         <?php
                         echo $result["id"];
                         ?>
+                        </h1>
                     </h3>
                 </div>
             </div>
-            <div>
+            <div  style="margin-top: 200px">
                 <img src="
                 <?php
                     echo "uploads/id/".$result["email"]."/".$result["cmnd"];
@@ -62,7 +66,7 @@
                 " alt="" class="image_form_BHYT">
             </div>
             <div class="inputTitle" style="text-align: center; width: 100%; margin-top: 30px">
-                <h3 class="titleName" >
+                <h3 class="titleName text-form" >
                     Sơ đồ hướng dẫn đường đi trong bệnh viên khi khám bệnh.
                 </h3>
             </div>
