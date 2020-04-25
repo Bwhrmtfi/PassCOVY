@@ -11,4 +11,14 @@ if(isset($_POST["checkRegistration"])){
     } 
     echo $tb;
 }
+if(isset($_POST["checkForm"])){
+    $tb="";
+    if($_SESSION["registration"]=="false"){
+        $tb="Bạn Chưa đăng ký khám bệnh";
+    }else{
+        $tb="true";
+    } 
+    // header('Location: /registration');
+    echo $tb;
+}
 ?>
