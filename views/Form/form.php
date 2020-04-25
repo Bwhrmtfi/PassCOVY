@@ -12,9 +12,6 @@
         $result = $result->fetch_assoc();
     }
 ?>
-<script>
-    var loadingImg = "<img class='loading-img' src = 'assets/images/loading.gif' ?>";
-</script>
     <div class="form">
             <h2 style="font-size: 30px">Phiếu đăng ký khám bệnh</h2>
             <div class="form-group-flex-registration2">
@@ -88,7 +85,3 @@
 
 </html>
 
-<script>
-document.getElementById("infor").className += " active";
-
-</script>

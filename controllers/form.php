@@ -6,6 +6,6 @@ class Form extends Controller
 {
     function anonymous()
     {
-        $this->view("Form/form", []);
+        $this->view("Form/makepdf", []);
     }
 }
