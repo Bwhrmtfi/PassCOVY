@@ -6,6 +6,10 @@ class Declaration extends Controller
 {
     function anonymous()
     {
-        $this->view("Declaration/declaration", []);
+        if(isAuth()){
+            $this->view("Declaration/declaration", []);
+        }else{
+            header('Location: /login');
+        }
     }
 }

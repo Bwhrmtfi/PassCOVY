@@ -73,6 +73,7 @@
   color: #29475f;
   font-weight: bold;
   font-size: large;
+  background-color: #fff !important;
 }
 .nar-brand {
   color: #7be2d1 !important;
@@ -123,6 +124,9 @@ body {
   position: relative;
   margin-top: -20px;
   margin-left: 200px;
+}
+#note{
+  display:none;
 }
 #email-message {
   display:none;

@@ -8,7 +8,7 @@
             <a class="nar-text nav-link" id="home" href="home">Tin COVY</a>
         </li>
         <li class="nav-item">
-            <a class="nar-text nav-link" id="registration" href="registration">Đăng ký khám bệnh</a>
+            <a class="nar-text nav-link" id="registration" href="#">Đăng ký khám bệnh</a>
         </li>
         <?php         
         if (isAuth()) {
@@ -22,7 +22,7 @@
                 <a class="nar-text nav-link dropdown-toggle" id="infor" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'.$_SESSION["name"].'</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="border-radius: 10px">
                     <a class="dropdown-item" href="declaration">Tờ khai y tế    '.$declaration.'</a>
-                    <a class="dropdown-item" id="form" href="form">Phiếu đăng ký khám bệnh</a>
+                    <a class="dropdown-item" id="form" href="#">Phiếu đăng ký khám bệnh</a>
                     <a class="dropdown-item" href="note">Sổ khám bệnh</a>
                     <a class="dropdown-item" href="changeinfo">Thay đổi thông tin</a>
                     <div class="dropdown-divider">Thay đổi thông tin</div>
@@ -52,8 +52,16 @@
                 data: 'checkRegistration=true',
                 success:function(res){
                     console.log(res);
-                    if(res!="true"){
-                        alert(res);
+                    if(res=="login"){
+                        alert("Bạn cần đăng nhận để đăng ký khám bệnh!");
+                        window.location="/login";
+                    }else if(res=="khaibao"){
+                        alert("Trước tiên bạn cần phải khai báo y tế");
+                        window.location="/declaration";
+                    }else if(res=="dangkyroi"){
+                        alert("Bạn đã đăng ký khám bệnh rồi");
+                    }else if(res=="true"){
+                        window.location="/registration";
                     }
                 }
             }); 
@@ -67,9 +75,12 @@
                     console.log(res);
                     if(res!="true"){
                         alert(res);
-                        window.location="/home";
+                    }else{
+                        window.open('/form');
                     }
                 }
             }); 
     });
+
 </script>
+

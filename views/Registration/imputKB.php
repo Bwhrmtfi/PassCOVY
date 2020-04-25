@@ -19,6 +19,6 @@ if(isset($_POST['submit'])){
     $stmt->bind_param("ssisi", $faculty, $date,$id,$time,$stt); 
     $stmt->execute();
     $_SESSION["registration"]="true";
-    header('Location: /form'); 
+    header('Location: /'); 
 }
 ?>

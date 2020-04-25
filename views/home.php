@@ -18,4 +18,11 @@ include('static_header.php');
 </html>
 <script>
     document.getElementById("home").className += " active";
+    window.onload = function(){
+        if(sessionStorage.getItem("form")=="true"){
+            window.open("/form", "_blank");
+            sessionStorage.setItem("form", "false"); 
+        }
+    }
+    
 </script>

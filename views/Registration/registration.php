@@ -2,7 +2,8 @@
 <html lang="">
 <?php 
 require_once __DIR__."/../../mysqli.php";
-include(__DIR__.'/../static_header.php'); 
+include(__DIR__.'/../static_header.php');
+require_once __DIR__."/../../core/functions/auth.php"; 
 ?>
 
 <script>
@@ -83,7 +84,7 @@ include(__DIR__.'/../static_header.php');
                 </div>
                 <div class="containerbtn">
                     <div class="center">
-                    <button type="submit" name="submit" class="btn btn-sumit">Đăng ký</button>
+                    <button type="submit" id="submit" name="submit" class="btn btn-sumit">Đăng ký</button>
                     </div>
                 </div>
             </form>
@@ -135,5 +136,9 @@ $('#faculty').on('change', function(){
             }
         }); 
     }
+});
+$('#submit').click(function(){
+    sessionStorage.setItem("form", "true");
+    alert("Đăng ký lịch khám thành công.");
 });
 </script>

@@ -6,6 +6,10 @@ class Form extends Controller
 {
     function anonymous()
     {
-        $this->view("Form/makepdf", []);
+        if(isAuth()){
+            $this->view("Form/makepdf", []);
+        }else{
+            header('Location: /login');
+        }
     }
 }

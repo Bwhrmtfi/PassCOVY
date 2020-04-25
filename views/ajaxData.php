@@ -3,11 +3,11 @@ require_once "../core/functions/auth.php";
 if(isset($_POST["checkRegistration"])){
     $tb="";
     if(!isAuth()){
-        $tb="Bạn chưa đăng nhập";
+        $tb="login";
     }else if($_SESSION["declaration"]=="false"){
-        $tb="Bạn cần khai báo y tế trước khi đăng ký khám bệnh";
+        $tb="khaibao";
     }else if($_SESSION["registration"]=="true"){
-        $tb="Bạn đã đăng ký khám bệnh rồi";
+        $tb="dangkyroi";
     }else{
         $tb="true";
     } 

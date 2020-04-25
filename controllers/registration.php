@@ -11,7 +11,7 @@ class Registration extends Controller
         if (isAuth()){
             if($_SESSION['declaration']=='true'){
                 if($_SESSION['registration']=='true'){
-                    header('Location: /form');
+                    header('Location: /');
                 }else{
                     $this->view("Registration/registration", ["name"=>$_SESSION["name"],"id"=>$_SESSION["login_id"]]);            
                 }
