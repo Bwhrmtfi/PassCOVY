@@ -1,7 +1,7 @@
 <?php
-require_once "../../core/functions/helper.php";
-require_once "../../mysqli.php";
-require_once "../../core/functions/auth.php";
+require_once __DIR__."/../../core/functions/helper.php";
+require_once __DIR__."/../../mysqli.php";
+require_once __DIR__."/../../core/functions/auth.php";
 const FILE_PATH_BHYT = "../../uploads/BHYT/";
 const FILE_PATH_ID = "../../uploads/id/";
 if(isset($_POST['submit'])){

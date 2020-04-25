@@ -110,7 +110,7 @@
 <script>
 document.getElementById("registrationAccout").className += " active";
 
-$('#email').on('change', function(){
+$('#email').keyup(function(){
         var email = $(this).val();
         if(email){
             $.ajax({
