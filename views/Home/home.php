@@ -27,11 +27,14 @@
     </div>
     <button id="u" class="btn btn-danger text-d">Sử dụng ngay</button>
     <div style="width:100%; text-align: center;     position: absolute;margin-top: 50px;">
-        <h3 class="pass">Pass COVY là website cho phép người dùng có thể đăng ký và làm các thủ tục khám bệnh online. Giúp bệnh viện phân luồng người bệnh để giảm thiêu nguy cơ lây lan COVID-19.</h3>
+        <h3 class="pass">Pass COVY là website cho phép người dùng có thể đăng ký và làm các thủ tục khám bệnh online, giúp bệnh viện phân luồng người bệnh để giảm thiêu nguy cơ lây lan COVID-19.</h3>
     </div>
     <div class="home2">
-        
+         <img src="assets/images/vong.png" alt="" class="img-vong">
+            <h3 class="text-cac">Quy trình đăng ký khám bệnh qua website</h3>
+         <img src="assets/images/cacbuoc.png" alt="" class="img-cac">
     </div>
+
 </body>
 
 </html>

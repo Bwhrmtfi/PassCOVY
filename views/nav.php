@@ -1,11 +1,11 @@
-<nav class="navbar navbar-light" style="background-color: #fff; position: fixed; top: 0; width: 100%;   z-index: 3;">
+<nav class="navbar navbar-light" style="background-color: #fff; position: fixed; top: 0; width: 100%;   z-index: 3; box-shadow: 0 4px 4px 0 rgba(0,0,0,.1);">
     <a class="nar-brand navbar-brand  " href="home" style="margin-left: 150px">
         <img src="coronavirus.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Pass COVY
     </a>
     <ul class="nav" id="myTab" style="margin-right: 150px">
         <li class="nav-item">
-            <a class="nar-text nav-link" id="home" href="home">Tin COVY</a>
+            <a class="nar-text nav-link" id="home" href="home">Giới thiệu</a>
         </li>
         <li class="nav-item">
             <a class="nar-text nav-link" id="registration" href="#">Đăng ký khám bệnh</a>

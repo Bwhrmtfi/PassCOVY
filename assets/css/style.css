@@ -807,9 +807,15 @@ select:-moz-placeholder {
 .home2{
   width: 100%;
   background-color: #fff;
-  height: 100px;
+  height: 1000px;
   position: absolute;
   margin-top: 400px;
+}
+.home3{
+  width: 100%;
+  background-color: #fff;
+  height: 1000px;
+  margin-top: 1000px;
 }
 .pass{
   width: 80%;
@@ -817,4 +823,26 @@ select:-moz-placeholder {
   color: #fff;
   font-size: 25px;
   margin-left: 10%;
+}
+.img-vong {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-top: 50px;
+}
+.img-cac{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 50px;
+}
+.text-cac{
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+  color: #004439;
+  font-size: 30px;
+  margin-top: 40px;
 }
