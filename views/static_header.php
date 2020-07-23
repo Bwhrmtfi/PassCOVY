@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pass COVY</title>
+    <title>Smart Water Trash Collection</title>
     <link rel="shortcut icon" href="coronavirus.png" type="image/x-icon">
     <!-- Custom styles for this template-->
     <link href="assets/css/sb-admin.css" rel="stylesheet">
